@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+<script language="JavaScript">
+var D1_bil=prompt("Data1=","");
+var G1_bil=prompt("Godzina1=","");
+var D2_bil=prompt("Data2=","");
+var G2_bil=prompt("Godzina2=","");
+var sekund;
+var a=parseFloat(D1_bil);
+var b=parseFloat(D2_bil);
+var c=parseFloat(G1_bil);
+var d=parseFloat(G2_bil);
+sekund=((a-b)*24+c-d)*3600;
+document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+</script>
+</div>
+</body>
+</html>

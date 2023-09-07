@@ -1,0 +1,163 @@
+<html><body>
+<H1>Pytania teoretyczne dotyczące programowania obiektowego:</H1>
+
+1. W jaki sposób można określić właściwość danego obiektu (dwa sposoby wraz z przykładami)?
+   Odpowiedź:
+   - Sposób 1: Określanie właściwości za pomocą notacji kropkowej. Przykład:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   age: 30
+ };
+
+ console.log(a.name); // Wynik: John
+ </script>
+   - Sposób 2: Określanie właściwości za pomocą notacji nawiasowej. Przykład:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   age: 30
+ };
+
+ console.log(a['age']); // Wynik: 30
+ </script>
+
+2. W jaki sposób można odwołać się do pól (właściwości) i metod?
+   Odpowiedź: Aby odwołać się do pól (właściwości) i metod obiektu, można użyć notacji kropkowej lub notacji nawiasowej. Przykłady:
+
+   - Odwołanie do pola (właściwości) za pomocą notacji kropkowej:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   age: 30
+ };
+
+ console.log(a.name); // Wynik: John
+ </script>
+
+   - Odwołanie do pola (właściwości) za pomocą notacji nawiasowej:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   age: 30
+ };
+
+ console.log(a['age']); // Wynik: 30
+ </script>
+
+   - Odwołanie do metody za pomocą notacji kropkowej:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   sayHello: function() {
+ console.log('Hello!');
+   }
+ };
+
+ a.sayHello(); // Wynik: Hello!
+ </script>
+
+   - Odwołanie do metody za pomocą notacji nawiasowej:
+ <script type="text/javascript">javascript
+ let= {
+   name: 'John',
+   sayHello: function() {
+ console.log('Hello!');
+   }
+ };
+
+ a['sayHello'](); // Wynik: Hello!
+ </script>
+
+3. Wymień cechy charakterystyczne konstruktora.
+   Odpowiedź: Cechy charakterystyczne konstruktora to:
+   - Konstruktor jest specjalną metodą w klasie lub funkcją, która jest wywoływana podczas tworzenia nowego obiektu.
+   - Ma taką samą nazwę jak klasa lub funkcja, w której się znajduje.
+   - Służy do inicjalizacji nowo utworzonego obiektu, ustawienia początkowych wartości pól (właściwości) obiektu.
+   - Może przyjmować parametry, które są używane do ustawienia wartości pól obiektu.
+   - Konstruktor jest wywoływany za pomocą słowa kluczowego `new` w przypadku klas lub funkcji konstrukcyjnych.
+
+4. Konstruowanie obiektu na podstawie
+
+ przykładu -> obiekt ma trzy pola oraz jedną metodę.
+   Odpowiedź:
+   <script type="text/javascript">javascript
+   function Car(make, model, year) {
+ this.make = make;
+ this.model = model;
+ this.year = year;
+
+ this.start = function() {
+   console.log('Engine started!');
+ };
+   }
+
+   let myCar = new Car('Toyota', 'Camry', 2020);
+
+   console.log(myCar.make);  // Wynik: Toyota
+   console.log(myCar.model); // Wynik: Camry
+   console.log(myCar.year);  // Wynik: 2020
+
+   myCar.start(); // Wynik: Engine started!
+   </script>
+
+5. Znaczenie słowa `this`. Jak oddzielamy pola oraz metody?
+   Odpowiedź:
+   - Słowo kluczowe `this` wskazuje na bieżący obiekt, w którym jest wykorzystywane. Odnosi się do konkretnego wystąpienia obiektu, na którym jest wywoływana metoda lub dostęp do pola.
+   - `this` oddziela pola od metod wewnątrz definicji obiektu. Przykładowo, pola (właściwości) obiektu są inicjalizowane za pomocą `this.fieldName`, a metody są definiowane jako `this.methodName = function() { ... }`.
+
+6. Konstruktor w JS na podstawie przykładu wraz z opisem.
+   Odpowiedź:
+   <script type="text/javascript">javascript
+   function Person(name, age) {
+ this.name = name;
+ this.age = age;
+
+ this.sayHello = function() {
+   console.log('Hello, my name is ' + this.name + '!');
+ };
+   }
+
+   let person1 = new Person('John', 30);
+   let person2 = new Person('Alice', 25);
+
+   person1.sayHello(); // Wynik: Hello, my name is John!
+   person2.sayHello(); // Wynik: Hello, my name is Alice!
+   </script>
+   W powyższym przykładzie `Person` jest konstruktorem. Przy tworzeniu nowych obiektów za pomocą `new Person(...)`, konstruktor jest wywoływany, a przekazane argumenty są używane do ustawienia właściwości `name` i `age` dla każdego obiektu. Każdy obiekt ma również swoją własną metodę `sayHello()`, która wyświetla powitanie z wykorzystaniem właściwości `name`.
+
+7. Znaczenie słowa kluczowego `new` wraz z przykładem.
+   Odpowiedź: Słowo kluczowe `new` jest używane do tworzenia nowego obiektu na podstawie konstruktora. Przykład:
+
+   <script type="text/javascript">javascript
+   function Person(name) {
+ this.name = name;
+   }
+
+   let= new Person('John');
+   console.log(a.name); // Wynik: John
+   </script>
+
+   Słowo kluczowe `new` tworzy nowy obiekt na podstawie konstruktora `Person` i przypisuje go do zmiennej `a`. Następnie, za pomocą `a.name` możemy uzyskać dostęp do właściwo
+
+ści `name` utworzonego obiektu.
+
+8. Znaczenie słowa kluczowego `prototype` wraz z przykładem i opisem.
+   Odpowiedź: Słowo kluczowe `prototype` w języku JavaScript odnosi się do właściwości obiektów funkcji konstrukcyjnych. Jest to specjalny obiekt, który zawiera właściwości i metody, które będą dziedziczone przez wszystkie obiekty utworzone na podstawie tej funkcji konstrukcyjnej.
+
+   Przykład:
+   <script type="text/javascript">javascript
+   function Person(name) {
+ this.name = name;
+   }
+
+   Person.prototype.sayHello = function() {
+ console.log('Hello, my name is ' + this.name + '!');
+   };
+
+   let= new Person('John');
+   a.sayHello(); // Wynik: Hello, my name is John!
+   </script>
+
+   W powyższym przykładzie `sayHello` jest dodawane do prototypu `Person`. Oznacza to, że każdy obiekt utworzony za pomocą konstruktora `Person` będzie dziedziczył tę metodę z prototypu. Dzięki temu oszczędzamy miejsce w pamięci, ponieważ metoda jest przechowywana tylko raz w prototypie, a nie dla każdego utworzonego obiektu.
+</body></html>

@@ -1,0 +1,58 @@
+
+<html>
+<head>
+<title>
+Przykład obliczenia Pole i Obwód walca
+</title>
+<script language="JavaScript">
+function Pole(a,b,wys)
+{
+c=parseFloat(a)
+d=parseFloat(b)
+e=parseFloat(wys)
+Pow_bilyi=c+d+(e/2)
+document.getElementsByName('pole')[0].value=Pow_bilyi.toFixed(2); /* na dokument */
+alert("Pole="+Pow_bilyi.toFixed(2)+" cm^2"); /*do okna Alert */
+pokaz1.innerHTML="Pole="+Pow_bilyi.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function Obwod(a,b,wys)
+{
+c=parseFloat(a)
+d=parseFloat(b)
+e=parseFloat(wys)
+f=((d-c)*(d-c))+(e*e)
+Obw_bilyi=c+d+(Math.sqrt(f)*2);
+document.getElementsByName('obw')[0].value=Obw_bilyi.toFixed(2);
+alert("Obwod="+Obw_bilyi.toFixed(2)+" cm");
+pokaz2.innerHTML="Obwod="+Obw_bilyi.toFixed(2)+" cm"+"<br>";
+}
+</script>
+</head>
+<body>
+Obliczanie Pole i Obwód walca
+<br> <br>
+<form name="formularz" action="" onsubmit="Pole(this.bok_a.value,this.bok_b.value,this.wys.value); Obwod(this.bok_a.value,this.bok_b.value,this.wys.value);return false">
+Podaj a=
+<input size="6" name="bok_a">
+Podaj b=
+<input size="6" name="bok_b">
+Wysokosc=
+<input size="6" name="wys">
+<br> <br>
+<input type="submit" value="oblicz" >
+<br> <br>
+Pole=
+<input size="6" name="pole">
+Obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr>
+<td id="pokaz1"></td>
+</tr>
+<tr>
+<td id="pokaz2"></td>
+</tr>
+</table>
+</body>
+</html>
