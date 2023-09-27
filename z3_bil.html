@@ -6,11 +6,17 @@
  {
 window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=400,width=500,top=200,left=200");
  }
+  function okno_zamknij_bilyi()
+{
+window.close()
+}
  </script>
  </head>
 <body>
  <form>
  <input type="button" name="z3" value="z3_bilyi" onclick="WinOpen_bilyi(' ')">
+  
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
  </form>
 </body>
 </html>
