@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Bilyi 2P</title>
+<style>
+h1{
+font-size: 2cm;
+color: red;
+
+}
+</style>
+<script language="JavaScript">
+function WinOpen_bilyi_g1()
+{
+window.open("g1.jpg","okienko_g1","toolbar=no,directories=no,menubar=no,height=280,width=160,top=00,left=100");
+}
+function WinOpen_bilyi_g2()
+{
+window.open("g2.jpg","okienko_g2","toolbar=no,directories=no,menubar=no,height=280,width=160,top=350,left=100");
+}
+function WinOpen_bilyi_g3()
+{
+window.open("g3.jpg","okienko_g3","toolbar=no,directories=no,menubar=no,height=280,width=160,top=00,left=1100");
+}
+function WinOpen_bilyi_g4()
+{
+window.open("g4.jpg","okienko_g4","toolbar=no,directories=no,menubar=no,height=280,width=160,top=350,left=1100");
+}
+function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<h1>Wykonał: Oleksandr Bilyi mój numer w dzienniku 2, czyli mam [(2) mod 4=2] układ 2</h1>
+<form>
+<input type="button" name="grafika1" value="grafika 1" onclick="WinOpen_bilyi_g1(' ')">
+<input type="button" name="grafika2" value="grafika 2" onclick="WinOpen_bilyi_g2(' ')">
+<input type="button" name="grafika3" value="grafika 3" onclick="WinOpen_bilyi_g3(' ')">
+<input type="button" name="grafika4" value="grafika 4" onclick="WinOpen_bilyi_g4(' ')">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+</form>
+</body>
+</html>
