@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odpowiedzi</title>
+</head>
+<body>
+    <script>
+        function okno_zamknij_bilyi()
+  {
+  window.close()
+  }
+      </script>
+    <h1>Odpowiedzi do zadań</h1>
+
+    <ul>
+        <li><strong>Rodzaje okienek:</strong></li>
+        <ul>
+            <li>Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK.</li>
+            <li>Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.</li>
+            <li>Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+        </ul>
+        <li><strong>Konwersja liczb:</strong></li>
+        <ul>
+            <li>Wczytanie zmiennej z użyciem `prompt` wykonywane jest jako ciąg znaków dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby wykonywać obliczenia.</li>
+            <li>parseFloat(zmienna) - konwersja zmiennej do typu float.</li>
+            <li>parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego).</li>
+            <li>toString(zmienna) - konwersja zmiennej do typu łańcuchowego.</li>
+        </ul>
+        <li><strong>Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</strong></li>
+        <ul>
+            <li>Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".</li>
+            <li>Wielkość liter ma znaczenie.</li>
+            <li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</li>
+        </ul>
+        <li><strong>Typy zmiennych w JavaScript:</strong></li>
+        <ul>
+            <li>Number - Typ liczbowy, reprezentuje liczby całkowite i zmiennoprzecinkowe.</li>
+            <li>String - Typ tekstowy, reprezentuje ciągi znaków.</li>
+            <li>Boolean - Typ logiczny, reprezentuje wartości logiczne true (prawda) lub false (fałsz).</li>
+            <li>Null - Pusta zawartość.</li>
+            <li>Undefined - Typ niezidentyfikowany.</li>
+            <li>Object - Obiekt, ogólny typ danych.</li>
+        </ul>
+    </ul>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+</body>
+</html>
