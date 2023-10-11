@@ -9,8 +9,13 @@ var a=parseFloat(D1_bil);
 var b=parseFloat(D2_bil);
 sekund=(a-b)*24*60*60;
 document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>");
+function okno_zamknij_bilyi()
+{
+window.close()
+}
 </script>
 </div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
 </body>
 </html>
 

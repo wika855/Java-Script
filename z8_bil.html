@@ -9,6 +9,10 @@
  else
  { document.write("Nacisnąłeś Cancel!"); }
  }
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
 </script>
 </head>
 <body>
@@ -18,5 +22,6 @@ Użytkownik musi nacisnąć „OK.” w celu akceptacji bądź „Cancel” w ce
 wybrane „OK.” metoda zwraca true w przeciwnym wypadku false. 
 <br>
 <input type="button" onclick="show_confirm()" value="Pokaż confirm box" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
 </body>
 </html>
