@@ -1,0 +1,18 @@
+<html>
+<body>
+    <h1 style="color: green;">Menu</h1><br>
+    <h1 style="color: red;">1-CZERWONY</h1>
+    <h1 style="color: blue;">2-NIEBIESKI</h1>
+<input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_bil()" />
+<script>
+function fun_bil() {
+var x_bil = prompt("Podaj kolor", "");
+if(x_bil == 1 || x_bil.toLowerCase() == "czerwony") {
+document.write('<h7 style="color:red;">wczytałeś kolor czerwony</h7><br />'); }
+else if(x_bil == 2 || x_bil.toLowerCase() == "niebieski") {
+document.write('<h1 style="color:blue;">wczytałeś kolor niebieski</h1><br />');
+}
+}
+</script>
+</body>
+</html>
