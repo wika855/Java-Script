@@ -11,7 +11,11 @@
  };
 
  console.log(a.name); // Wynik: John
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
    - Sposób 2: Określanie właściwości za pomocą notacji nawiasowej. Przykład:
  <script type="text/javascript">javascript
  let= {
@@ -20,7 +24,11 @@
  };
 
  console.log(a['age']); // Wynik: 30
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
 2. W jaki sposób można odwołać się do pól (właściwości) i metod?
    Odpowiedź: Aby odwołać się do pól (właściwości) i metod obiektu, można użyć notacji kropkowej lub notacji nawiasowej. Przykłady:
@@ -33,7 +41,11 @@
  };
 
  console.log(a.name); // Wynik: John
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
    - Odwołanie do pola (właściwości) za pomocą notacji nawiasowej:
  <script type="text/javascript">javascript
@@ -43,7 +55,11 @@
  };
 
  console.log(a['age']); // Wynik: 30
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
    - Odwołanie do metody za pomocą notacji kropkowej:
  <script type="text/javascript">javascript
@@ -55,7 +71,11 @@
  };
 
  a.sayHello(); // Wynik: Hello!
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
    - Odwołanie do metody za pomocą notacji nawiasowej:
  <script type="text/javascript">javascript
@@ -67,7 +87,11 @@
  };
 
  a['sayHello'](); // Wynik: Hello!
- </script>
+ function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
 3. Wymień cechy charakterystyczne konstruktora.
    Odpowiedź: Cechy charakterystyczne konstruktora to:
@@ -99,7 +123,11 @@
    console.log(myCar.year);  // Wynik: 2020
 
    myCar.start(); // Wynik: Engine started!
-   </script>
+   function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
 5. Znaczenie słowa `this`. Jak oddzielamy pola oraz metody?
    Odpowiedź:
@@ -123,7 +151,11 @@
 
    person1.sayHello(); // Wynik: Hello, my name is John!
    person2.sayHello(); // Wynik: Hello, my name is Alice!
-   </script>
+   function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
    W powyższym przykładzie `Person` jest konstruktorem. Przy tworzeniu nowych obiektów za pomocą `new Person(...)`, konstruktor jest wywoływany, a przekazane argumenty są używane do ustawienia właściwości `name` i `age` dla każdego obiektu. Każdy obiekt ma również swoją własną metodę `sayHello()`, która wyświetla powitanie z wykorzystaniem właściwości `name`.
 
 7. Znaczenie słowa kluczowego `new` wraz z przykładem.
@@ -136,7 +168,11 @@
 
    let= new Person('John');
    console.log(a.name); // Wynik: John
-   </script>
+   function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
    Słowo kluczowe `new` tworzy nowy obiekt na podstawie konstruktora `Person` i przypisuje go do zmiennej `a`. Następnie, za pomocą `a.name` możemy uzyskać dostęp do właściwo
 
@@ -157,7 +193,11 @@
 
    let= new Person('John');
    a.sayHello(); // Wynik: Hello, my name is John!
-   </script>
+   function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
 
    W powyższym przykładzie `sayHello` jest dodawane do prototypu `Person`. Oznacza to, że każdy obiekt utworzony za pomocą konstruktora `Person` będzie dziedziczył tę metodę z prototypu. Dzięki temu oszczędzamy miejsce w pamięci, ponieważ metoda jest przechowywana tylko raz w prototypie, a nie dla każdego utworzonego obiektu.
 <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>

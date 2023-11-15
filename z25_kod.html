@@ -1,0 +1,76 @@
+<html><body>
+    <script>
+        function okno_zamknij_bilyi()
+{
+window.close()
+}
+</script>
+<textarea cols="100%" rows="100%">
+
+
+        <html>
+                <head>
+                <title>
+                Przykład obliczenia Stala i Obwód walca
+                </title>
+                <script language="JavaScript">
+                function Stala(a,b,c)
+                {
+                no=parseFloat(a)
+                t=parseFloat(b)
+                okr=parseFloat(c)
+                Stala_w=Math.LN2/okr;
+                document.getElementsByName('stala')[0].value=Stala_w.toFixed(2); /* na dokument */
+                alert("Stala="+Stala_w.toFixed(2)); /*do okna Alert */
+                pokaz1.innerHTML="Stala="+Stala_w.toFixed(2)+"("+Stala_w.toFixed(6)+")<br>"; /* do tabeli */
+                }
+                function N(a,b,c)
+                {
+                no=parseFloat(a)
+                t=parseFloat(b)
+                okr=parseFloat(c)
+                N_w=no*Math.pow(Math.E,-1*Stala_w*t);
+                document.getElementsByName('n')[0].value=N_w.toFixed(2);
+                alert("N="+N_w.toFixed(2));
+                pokaz2.innerHTML="N="+N_w.toFixed(2)+"<br>";
+                }
+                function okno_zamknij_bilyi()
+            {
+            window.close()
+            }
+            </script>
+                </head>
+                <body>
+                Obliczanie Stala i Obwód walca
+                <br> <br>
+                <form name="formularz" action="" onsubmit="Stala(this.no.value,this.t.value,this.okr.value); N(this.no.value,this.t.value,this.okr.value);return false">
+                Podaj No =
+                <input size="6" name="no">
+                Podaj t =
+                <input size="6" name="t">
+                Podaj T1/2 =
+                <input size="6" name="okr">
+                <br> <br>
+                <input type="submit" value="oblicz" >
+                <br> <br>
+                λ =
+                <input size="6" name="stala">
+                N =
+                <input size="6" name="n">
+                </form>
+                <table>
+                <tr>
+                <td id="pokaz1"></td>
+                </tr>
+                <tr>
+                <td id="pokaz2"></td>
+                </tr>
+                </table>
+                <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+                </body>
+                </html>
+                
+            
+</textarea>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_bilyi()"/>
+</body></html>
