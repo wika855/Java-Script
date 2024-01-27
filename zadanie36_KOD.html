@@ -1,0 +1,33 @@
+<TEXTAREA cols:70 rows:25>
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+ <script>
+     document.write ("<font color=green size=7>MENU</font>"+"<br>"+"<br>"+"<br>"+"<br>");
+     
+     document.write ("<font color=red size=7>1-Czerwony</font>"+"<br>"+"<br>");
+
+     document.write ("<font color=blue size=7>2-Niebieski</font>"+"<br>");
+
+     
+    
+ function fun_chec() {
+ var x_chec = prompt("Podaj kolor", "");
+ if(x_chec == 1 || x_chec.toLowerCase() == "czerwony") {
+document.write('<h1 style=\"color:red; font-size:40px;">Wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_chec == 2 || x_chec.toLowerCase() == "niebieski") {
+document.write('<h6 style=\"color:blue; font-size:40px;">Wczytałeś kolor niebieski</h6><br />');
+}
+}
+</script>
+<input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_chec()" />
+</body>
+</html>
+</TEXTAREA>
